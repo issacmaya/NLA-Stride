@@ -13,8 +13,7 @@
     ![alt text](images/img_1005.png)
     ![alt text](images/img_1006.png)
 5. #### 享受動畫的魅力
-    <video controls src="images/T01mp40001-0072.mp4" title="Title"></video>
-    <video controls src="images/D0001-0090.mp4" title="Title"></video>
+    ![alt text](images/DEMO_01.gif)
 ### 功能總覽
 
 ### 詳細指南
