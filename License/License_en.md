@@ -15,7 +15,7 @@ https://creativecommons.org/licenses/by-nc/4.0/
 
 - The source code is proprietary and privately owned  
 - Available for purchase on **SuperHive** (link will be added later)  
-- © 2024 Your Name. All rights reserved.  
+- © 2026 issac. All rights reserved.  
 
 ---
 
