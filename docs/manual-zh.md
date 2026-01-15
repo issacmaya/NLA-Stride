@@ -14,6 +14,8 @@
     ![alt text](images/img_1006.png)
 5. #### 享受動畫的魅力
     ![alt text](images/DEMO_01.gif)
+    ![alt text](images/DEMO_02.gif)
+
 ### 功能總覽
 
 ### 詳細指南
