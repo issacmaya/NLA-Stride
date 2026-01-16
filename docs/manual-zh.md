@@ -49,11 +49,13 @@
 
 ### 4. NLA 對齊 / 錯位操作
 
-<p align="center">
-<a href="images/img_1004.png"><img src="images/img_1004.png" width="380"></a>
-<a href="images/img_1005.png"><img src="images/img_1005.png" width="380"></a>
-<a href="images/img_1006.png"><img src="images/img_1006.png" width="380"></a>
-</p>
+
+<a href="images/img_1004.png"><img src="images/img_1004.png" width="650"></a>
+
+<a href="images/img_1005.png"><img src="images/img_1005.png" width="650"></a>
+
+<a href="images/img_1006.png"><img src="images/img_1006.png" width="650"></a>
+
 
 以上是 NLA 對齊與錯位功能示意。
 
@@ -61,43 +63,74 @@
 
 ### 5. 享受動畫魅力
 
-<a href="images/DEMO_01.gif">
+<a href="images/DEMO_01.mp4">
   <img src="images/DEMO_01.gif" width="720">
 </a>
 
-<a href="images/DEMO_02.gif">
+<a href="images/DEMO_02.mp4">
   <img src="images/DEMO_02.gif" width="720">
+</a>
+
+<a href="images/DEM3_02.mp4">
+  <img src="images/DEMO_03.gif" width="720">
 </a>
 
 ---
 
 ## 🧰 功能總覽
 
-> ❗ 此部分請補充你外掛的所有功能清單，例如：
+> - 物件順序
 > - NLA 自動對齊
 > - 錯位動畫片段
 > - 大量建立 NLA  
 > - 跨物件操作  
 > - 路徑與控制設定  
-> - …etc
+
 
 ---
 
 ## 📖 詳細指南
 
-### 注意資料是否為 "實例化資料"
 
-> ❗ 外掛本身只針對，片段去做調整，所以如果有實例化資料，也就是類似的共用資料，的情況，NLA 在錯位時會不如原本預期。
+#### 1. ⚠️ 注意「實例化資料（Instanced Data）」的細節
 
-> 例如 : 兩個物件，共用同一個材質球 ( 舉例 : M材質 ) ，也可以說 M材質是一種實例化的狀態，雖然在兩個物體的 NLA 中，看似是兩個獨立的片段，但實際操作就可以得知，是同樣的東西；這時候如果用 NLA Stride 外掛錯位，將無法錯位
+本外掛主要針對 NLA 片段（Strips）本身進行錯位與對齊處理，  
+並 **不會** 自動處理 Blender 的「實例化資料」關係。
 
-```
- 💡 解決方式 : 
-    用 blender 內建的功能，將資料獨立出來，就可以正常錯位了 ^ +++^
-```
+#### 什麼是實例化資料？
+
+當**多個物件共用同一份資料**時，這些資料就是「實例化（Instanced）」的。
+
+- 例如：  
+  - 兩個物件共用同一個材質球  
+  - 或共用同一個動畫、網格、或其他資料區塊  
+
+在NLA 編輯器中看起來像是兩條獨立片段，但實際上**背後指向的是同一份資料**。
+結果就是，在這種情況下使用 **NLA Stride 進行錯位**時，外掛看似在移動不同片段，但實際上仍在影響同一份資料，因此**無法達成你預期的錯位效果**。
+
+
+#### ✅ 解決方式（ 搭配下方截圖操作 ）
+
+> 💡 **關鍵做法：先將資料獨立化，再進行錯位**
+
+步驟如下（ 如圖所示 ）：
+
+1. 在 3D 視窗中選取需要處理的物件  
+2. 開啟 **物件 → 關聯資料（Relations）**  
+3. 點擊 **使單一使用者（Make Single User）**  
+4. 依需求選取需要獨立的資料類型
+5. 確認資料已獨立後，再使用 **NLA Stride** 進行錯位  
+
+
+
 <a href="images/img_3001.png">
   <img src="images/img_3001.png" width="650">
 </a>
+
+> 資料獨立後，每個物件都會擁有「真正獨立的 NLA 資料」，NLA Stride 即可 **正常、可預期地錯位 NLA 片段** 。
+---
+
+
 ### 大量建立 NLA
 
 > ❗ 請在這裡描述如何針對多物件建立 NLA。
