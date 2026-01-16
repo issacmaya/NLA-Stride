@@ -82,6 +82,7 @@
 #### 1. 資料來源 
 
 <a href="images/img_2001.png"><img src="images/img_2001.png" width="650"></a>
+
 A : 初始並加入所選
 B : 清空清單
 C : 動畫來源
