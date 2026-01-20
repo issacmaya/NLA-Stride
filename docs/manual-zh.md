@@ -71,9 +71,14 @@
   <img src="images/DEMO_02.gif" width="720">
 </a>
 
-<a href="images/DEM3_02.mp4">
+<a href="images/DEM3_03.mp4">
   <img src="images/DEMO_03.gif" width="720">
 </a>
+
+<a href="images/DEM3_04.mp4">
+  <img src="images/DEMO_04.gif" width="720">
+</a>
+此範例感謝台灣 SANSUI / 山水品牌 提供模型贊助
 
 ---
 
