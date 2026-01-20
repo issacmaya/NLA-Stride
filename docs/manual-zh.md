@@ -78,7 +78,8 @@
 <a href="images/DEM3_04.mp4">
   <img src="images/DEMO_04.gif" width="720">
 </a>
-此範例感謝台灣 SANSUI / 山水品牌 提供模型贊助
+
+此範例模型感謝台灣 [SANSUI / 山水品牌](https://www.sansuitw.com/?gad_source=1&gad_campaignid=23085773952&gbraid=0AAAAAoXC59ENhboAZDO-y0zK4yQpidtXM&gclid=CjwKCAiAybfLBhAjEiwAI0mBBscjnZOEYBBY127EypNMfnL1h_Vqm_HACczeJBOqMK-euDJFPb1iAxoC7rkQAvD_BwE)  贊助提供
 
 ---
 
