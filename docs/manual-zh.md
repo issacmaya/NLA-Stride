@@ -132,6 +132,8 @@
   只針對清單中的物件做轉換。
 <br>
   
+  
+-  PS. [3.清單中內容說明](#3-清單中的圖示意義)
 
 #### 1-1. 清單功能
 
@@ -289,7 +291,8 @@
 
 ![alt text](images/img_3001.png)
 
-> 資料獨立後，每個物件都會擁有「真正獨立的 NLA 資料」，NLA Stride 即可 **正常、可預期地錯位 NLA 片段** 。
+> 資料獨立後，每個物件都會擁有「真正獨立的 NLA 資料」
+> NLA Stride 即可 **正常、可預期地錯位 NLA 片段** 。
 ---
 
 
@@ -305,14 +308,9 @@
 
 ---
 
-#### 3. 清單中的圖示意義
-![alt text](images/img_3003.gif)
 
-A : 
 
----
-
-## 📖 其他
+## 📖 其他說明
 
 
 #### 1. 對齊與錯位策略小技巧
@@ -329,15 +327,54 @@ A :
 ![alt text](images/img_4001.png)
 ---
 
+#### 2. 錯位說明
+- 線性模式 :  
+  - 簡易模式 : 
+  <a href="images/img_4002.png"><img src="images/img_4002.png" width="650"></a>
+  簡易模式會以原本的狀態 (如上圖最左邊) 疊加模式計算，如圖 錯位與縮放的數值設定 :錯位 100、縮放 1.5 ，最後一個片段的起始點 與長度(也可以說是結束點) 一定都會一樣；但可以看到一位疊加模式的不同，造成其他片段的起始點不同，造成不同的錯位感覺。
 
-
-
+- 專業模式 :
+  - 只差異於，專業模式可以設定控制 頭 與 尾，所以有兩個 疊加模式設定，
+<a href="images/img_4003.png"><img src="images/img_4003.png" width="650"></a>
+  -   但需要注意頭尾的兩種疊加模式如果 **不同**，需要注意動換片段會不會有問題
+  ( 過短或是消失 )。
+<a href="images/img_4004.png"><img src="images/img_4004.png" width="650"></a>
 
 ---
 
+#### 3. 清單中的圖示意義
+
+![alt text](images/img_3003.gif)
+
+圖 A : 資料模式
+圖 B : Action 代表一般的 動畫資料 (非 NLA 的動畫資料)
+圖 C : 可用 NLA 資料
+
+- 圖 B 與 圖 C 中的圖示意義，會因為 A欄中的 資料模式而改變 :
+  - ✔ : 有符合 A 欄中設定的 **正確** 資料
+  - ・: 有資料，但 **不是** A 欄中設定的資料
+  - ✕ : 沒有資料
+
+畫面中的資料 :
+| 項目 | 物件動畫 | 材質動畫 | 外形鍵動畫 |
+|------|------|------|--------|
+| **NLA 片段** | cube.049 | cube.050 | cube.051 | 
+| **作用中動作** | cube.027 | cube.037 | cube.038 | 
+
+- 其他 : cube.000 ( 3 種類型的 NLA 全都有 )   /   cube.039 ( 完全沒有動畫資料 )
+
+---
+
+
+
+
 ## 🔧 技術參考
 
-  ！[Blender NLA 官方手冊](https://docs.blender.org/manual/en/latest/editors/nla/index.html)
+  [Blender NLA 官方手冊](https://docs.blender.org/manual/en/latest/editors/nla/index.html)
+
+  [Blender API 官方手冊](https://docs.blender.org/api/current/bpy.ops.nla.html)
+
+  
 
 
 ## 📘 目錄
