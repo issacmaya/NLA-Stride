@@ -309,10 +309,10 @@
 
     ---
 
-  - 專業模式 :  
-  
+  - 專業模式 :    
   <a href="images/img_4003.png"><img src="images/img_4003.png" width="650"></a>  
   與簡易模式只差異於，專業模式可以設定控制 頭 與 尾，所以有多一個 疊加模式可以分別設定  
+  <br>
   <a href="images/img_4004.png"><img src="images/img_4004.png" width="650"></a>  
   但要注意頭尾的兩種疊加模式如果 **不同**，需要注意動換片段會不會有問題
     ( 過短或是消失 )。
