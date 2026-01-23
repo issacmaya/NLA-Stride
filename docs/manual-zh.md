@@ -23,7 +23,7 @@
 
 ### 1. 外掛安裝
 
-1. 使用 blender 官方的安裝步驟即可 ( **[通用安裝教學](https://docs.blender.org/manual/en/latest/editors/preferences/addons.html)** )
+1. 使用 Blender 官方的安裝步驟即可 ( **[通用安裝教學](https://docs.blender.org/manual/en/latest/editors/preferences/addons.html)** )
 
 2. 安裝外掛後，在 Blender 3D 檢視中的 **側欄 → 動畫** 頁籤可以看到 **NLA Stride Tool**。 
 <br>![alt text](images/img_1001.png)
@@ -310,7 +310,7 @@
 - 線性疊加模式 :  
   - 簡易模式 :   
   <a href="images/img_4002.png"><img src="images/img_4002.png" width="650"></a>  
-  簡易模式會以原本的狀態 (如上圖最左邊) 疊加模式計算，如圖 錯位與縮放的數值設定 :錯位 100、縮放 1.5 ，最後一個片段的起始點 與長度(也可以說是結束點) 一定都會一樣；但可以看到一位疊加模式的不同，造成其他片段的起始點不同，造成不同的錯位感覺。
+  簡易模式會以原本的狀態 (如上圖最左邊) 疊加模式計算，如圖 錯位與縮放的數值設定 :錯位 100、縮放 1.5 ，最後一個片段的起始點 與長度(也可以說是結束點) 一定都會一樣；但可以看到因為疊加模式的不同，造成其他片段的起始點不同，造成不同的錯位感覺。
 
     ---
   - 專業模式 :    
