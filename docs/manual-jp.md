@@ -1,4 +1,4 @@
-<a href="images/NLA-Stride_LOGO2.png"><img src="images/NLA-Stride_LOGO2.png" width="250"></a>
+<a href="images/NLA-Stride_LOGO2.png"><img src="images/NLA-Stride_LOGO2.png" width="250"></a>  
 
 # ユーザーマニュアル (日本語)
 
@@ -35,7 +35,7 @@
 
 <a href="images/img_1002.png">
   <img src="images/img_1002.png" width="650">
-</a>
+</a>  
 
 アニメーションデータを含む 1 つまたは複数のオブジェクトを選択します。 NLA ストリップではなく標準のアクションである場合は、「NLA へ一括プッシュ」セクションを参照してください。
 
@@ -52,11 +52,11 @@
 ### 4. NLA の整列 / オフセット操作
 
 
-<a href="images/img_1004.png"><img src="images/img_1004.png" width="650"></a>
+<a href="images/img_1004.png"><img src="images/img_1004.png" width="650"></a>  
 
-<a href="images/img_1005.png"><img src="images/img_1005.png" width="650"></a>
+<a href="images/img_1005.png"><img src="images/img_1005.png" width="650"></a>  
 
-<a href="images/img_1006.png"><img src="images/img_1006.png" width="650"></a>
+<a href="images/img_1006.png"><img src="images/img_1006.png" width="650"></a>  
 
 
 上記は NLA の整列およびオフセット機能のデモンストレーションです。
@@ -67,19 +67,19 @@
 
 <a href="images/DEMO_01.mp4">
   <img src="images/DEMO_01.gif" width="720">
-</a>
+</a>  
 
 <a href="images/DEMO_02.mp4">
   <img src="images/DEMO_02.gif" width="720">
-</a>
+</a>  
 
 <a href="images/DEM3_03.mp4">
   <img src="images/DEMO_03.gif" width="720">
-</a>
+</a>  
 
 <a href="images/DEM3_04.mp4">
   <img src="images/DEMO_04.gif" width="720">
-</a>
+</a>  
 
 このサンプルモデルは、台湾のブランド [SANSUI / 山水](https://www.sansuitw.com/?gad_source=1&gad_campaignid=23085773952&gbraid=0AAAAAoXC59ENhboAZDO-y0zK4yQpidtXM&gclid=CjwKCAiAybfLBhAjEiwAI0mBBscjnZOEYBBY127EypNMfnL1h_Vqm_HACczeJBOqMK-euDJFPb1iAxoC7rkQAvD_BwE) より提供いただきました。
 
@@ -325,17 +325,17 @@ NLA エディターでは 2 つの独立したストリップに見えるかも�
 
 #### 2. オフセットの説明
 - 線形スタッキングモード：
-  - 簡易モード：
-  <a href="images/img_4002.png"><img src="images/img_4002.png" width="650"></a>
+  - 簡易モード：  
+  <a href="images/img_4002.png"><img src="images/img_4002.png" width="650"></a>  
   簡易モードは元の状態 (図の左端) に基づいて計算されます。 オフセットを 100、スケールを 1.5 に設定すると、最後のストリップの開始点と終了点はターゲットと正確に一致します。 ただし、減衰モードが異なると、中間ストリップの分布が変わります。
 
     ---
 
   - プロモード：
   違いは、プロモードでは開始と終了の両方を制御できる点です。 2 つの減衰設定があります。
-  <a href="images/img_4003.png"><img src="images/img_4003.png" width="650"></a>
+  <a href="images/img_4003.png"><img src="images/img_4003.png" width="650"></a>  
   注意：開始と終了の減衰モードが **異なる** 場合、アニメーションストリップが短くなりすぎたり、消失したりする可能性があるため注意してください。
-  <a href="images/img_4004.png"><img src="images/img_4004.png" width="650"></a>
+  <a href="images/img_4004.png"><img src="images/img_4004.png" width="650"></a>  
 
 ---
 

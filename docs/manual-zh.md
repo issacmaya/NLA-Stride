@@ -1,7 +1,7 @@
 <!-- 手冊封面 -->
 
 
-<a href="images/NLA-Stride_LOGO2.png"><img src="images/NLA-Stride_LOGO2.png" width="250"></a>
+<a href="images/NLA-Stride_LOGO2.png"><img src="images/NLA-Stride_LOGO2.png" width="250"></a>  
 
 # 使用手冊（中文）
 
@@ -38,7 +38,7 @@
 
 <a href="images/img_1002.png">
   <img src="images/img_1002.png" width="650">
-</a>
+</a>  
 
 選取一或多個含有動畫資料的物件。如果是標準動畫而非 NLA 動畫，請參閱「大量建立 NLA」說明。
 
@@ -55,11 +55,11 @@
 ### 4. NLA 對齊 / 錯位操作
 
 
-<a href="images/img_1004.png"><img src="images/img_1004.png" width="650"></a>
+<a href="images/img_1004.png"><img src="images/img_1004.png" width="650"></a>  
 
-<a href="images/img_1005.png"><img src="images/img_1005.png" width="650"></a>
+<a href="images/img_1005.png"><img src="images/img_1005.png" width="650"></a>  
 
-<a href="images/img_1006.png"><img src="images/img_1006.png" width="650"></a>
+<a href="images/img_1006.png"><img src="images/img_1006.png" width="650"></a>  
 
 
 以上是 NLA 對齊與錯位功能示意。
@@ -70,19 +70,19 @@
 
 <a href="images/DEMO_01.mp4">
   <img src="images/DEMO_01.gif" width="720">
-</a>
+</a>  
 
 <a href="images/DEMO_02.mp4">
   <img src="images/DEMO_02.gif" width="720">
-</a>
+</a>  
 
 <a href="images/DEM3_03.mp4">
   <img src="images/DEMO_03.gif" width="720">
-</a>
+</a>  
 
 <a href="images/DEM3_04.mp4">
   <img src="images/DEMO_04.gif" width="720">
-</a>
+</a>  
 
 此範例模型感謝台灣 [SANSUI / 山水品牌](https://www.sansuitw.com/?gad_source=1&gad_campaignid=23085773952&gbraid=0AAAAAoXC59ENhboAZDO-y0zK4yQpidtXM&gclid=CjwKCAiAybfLBhAjEiwAI0mBBscjnZOEYBBY127EypNMfnL1h_Vqm_HACczeJBOqMK-euDJFPb1iAxoC7rkQAvD_BwE)  贊助提供
 
@@ -330,17 +330,17 @@
 #### 2. 錯位說明
 - 線性疊加模式 :  
   - 簡易模式 :   
-  <a href="images/img_4002.png"><img src="images/img_4002.png" width="650"></a>
+  <a href="images/img_4002.png"><img src="images/img_4002.png" width="650"></a>  
   簡易模式會以原本的狀態 (如上圖最左邊) 疊加模式計算，如圖 錯位與縮放的數值設定 :錯位 100、縮放 1.5 ，最後一個片段的起始點 與長度(也可以說是結束點) 一定都會一樣；但可以看到一位疊加模式的不同，造成其他片段的起始點不同，造成不同的錯位感覺。
 
     ---
 
   - 專業模式 :
   只差異於，專業模式可以設定控制 頭 與 尾，所以有兩個 疊加模式設定，
-  <a href="images/img_4003.png"><img src="images/img_4003.png" width="650"></a>
+  <a href="images/img_4003.png"><img src="images/img_4003.png" width="650"></a>  
   但需要注意頭尾的兩種疊加模式如果 **不同**，需要注意動換片段會不會有問題
     ( 過短或是消失 )。
-  <a href="images/img_4004.png"><img src="images/img_4004.png" width="650"></a>
+  <a href="images/img_4004.png"><img src="images/img_4004.png" width="650"></a>  
 
 ---
 

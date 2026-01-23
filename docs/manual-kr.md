@@ -1,4 +1,4 @@
-<a href="images/NLA-Stride_LOGO2.png"><img src="images/NLA-Stride_LOGO2.png" width="250"></a>
+<a href="images/NLA-Stride_LOGO2.png"><img src="images/NLA-Stride_LOGO2.png" width="250"></a>  
 
 # 사용 설명서 (한국어)
 
@@ -35,7 +35,7 @@
 
 <a href="images/img_1002.png">
   <img src="images/img_1002.png" width="650">
-</a>
+</a>  
 
 애니메이션 데이터를 포함하는 하나 이상의 오브젝트를 선택합니다. NLA 스트립이 아닌 표준 액션(Action)인 경우, "NLA로 일괄 푸시" 섹션을 참조하십시오.
 
@@ -52,11 +52,11 @@
 ### 4. NLA 정렬 / 오프셋 작업
 
 
-<a href="images/img_1004.png"><img src="images/img_1004.png" width="650"></a>
+<a href="images/img_1004.png"><img src="images/img_1004.png" width="650"></a>  
 
-<a href="images/img_1005.png"><img src="images/img_1005.png" width="650"></a>
+<a href="images/img_1005.png"><img src="images/img_1005.png" width="650"></a>  
 
-<a href="images/img_1006.png"><img src="images/img_1006.png" width="650"></a>
+<a href="images/img_1006.png"><img src="images/img_1006.png" width="650"></a>  
 
 
 위는 NLA 정렬 및 오프셋 기능의 데모입니다.
@@ -67,19 +67,19 @@
 
 <a href="images/DEMO_01.mp4">
   <img src="images/DEMO_01.gif" width="720">
-</a>
+</a>  
 
 <a href="images/DEMO_02.mp4">
   <img src="images/DEMO_02.gif" width="720">
-</a>
+</a>  
 
 <a href="images/DEM3_03.mp4">
   <img src="images/DEMO_03.gif" width="720">
-</a>
+</a>  
 
 <a href="images/DEM3_04.mp4">
   <img src="images/DEMO_04.gif" width="720">
-</a>
+</a>  
 
 예제 모델을 제공해주신 대만 브랜드 [SANSUI / 山水](https://www.sansuitw.com/?gad_source=1&gad_campaignid=23085773952&gbraid=0AAAAAoXC59ENhboAZDO-y0zK4yQpidtXM&gclid=CjwKCAiAybfLBhAjEiwAI0mBBscjnZOEYBBY127EypNMfnL1h_Vqm_HACczeJBOqMK-euDJFPb1iAxoC7rkQAvD_BwE)에 감사드립니다.
 
@@ -325,17 +325,17 @@ NLA 에디터에서는 두 개의 독립적인 스트립처럼 보일 수 있지
 
 #### 2. 오프셋 설명
 - 선형 스태킹 모드:  
-  - 간편 모드: 
-  <a href="images/img_4002.png"><img src="images/img_4002.png" width="650"></a>
+  - 간편 모드:  
+  <a href="images/img_4002.png"><img src="images/img_4002.png" width="650"></a>  
   간편 모드는 원래 상태(그림의 왼쪽 끝)를 기준으로 계산됩니다. 오프셋을 100, 스케일을 1.5로 설정하면 마지막 스트립의 시작점과 종료점이 대상과 정확히 일치하게 됩니다. 하지만 감쇠 모드에 따라 중간 스트립의 분포가 달라집니다.
 
     ---
 
   - 프로 모드:
   차이점은 프로 모드에서 시작(Head)과 종료(Tail)를 모두 제어할 수 있다는 것입니다. 따라서 두 개의 감쇠 설정이 있습니다.
-  <a href="images/img_4003.png"><img src="images/img_4003.png" width="650"></a>
+  <a href="images/img_4003.png"><img src="images/img_4003.png" width="650"></a>  
   주의: 시작과 종료의 감쇠 모드가 **다를** 경우 애니메이션 스트립이 너무 짧아지거나 사라질 수 있으므로 주의가 필요합니다.
-  <a href="images/img_4004.png"><img src="images/img_4004.png" width="650"></a>
+  <a href="images/img_4004.png"><img src="images/img_4004.png" width="650"></a>  
 
 ---
 
