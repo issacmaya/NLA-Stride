@@ -331,10 +331,10 @@ The addon provides a batch conversion tool (indicated by green arrows below). No
 
     ---
 
-  - Professional Mode:
-  The difference is that Professional Mode allows you to control both the Start and End. There are two falloff settings.
+  - Professional Mode:  
+  The difference is that Professional Mode allows you to control both the Start and End. There are two falloff settings.  
   <a href="images/img_4003.png"><img src="images/img_4003.png" width="650"></a>  
-  Note: If the Start and End falloff modes are **different**, be careful as animation strips might become too short or disappear.
+  Note: If the Start and End falloff modes are **different**, be careful as animation strips might become too short or disappear.  
   <a href="images/img_4004.png"><img src="images/img_4004.png" width="650"></a>  
 
 ---
