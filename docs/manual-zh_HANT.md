@@ -85,7 +85,7 @@
 此範例模型感謝台灣 [SANSUI / 山水品牌](https://www.sansuitw.com/?gad_source=1&gad_campaignid=23085773952&gbraid=0AAAAAoXC59ENhboAZDO-y0zK4yQpidtXM&gclid=CjwKCAiAybfLBhAjEiwAI0mBBscjnZOEYBBY127EypNMfnL1h_Vqm_HACczeJBOqMK-euDJFPb1iAxoC7rkQAvD_BwE)  贊助提供
 
 ---
-## 🌟 版本更新重點
+## 🌟 版本更新重點  
 #### v1.0.0 更新重點
 - 清單的匯出 / 匯入 / 追加  
   ![alt text](images/v100_001.png)  
