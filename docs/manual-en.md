@@ -84,7 +84,7 @@ Example model thanks to [SANSUI Taiwan](https://www.sansuitw.com/?gad_source=1&g
 ---
 ## 🌟 Version Highlights
 #### v1.0.0 Highlights
-- List Export / Import / Append 
+- List Export / Import / Append  
   ![alt text](images/v100_001.png)  
   1. Added three functions within list operations.
   2. Export and Import use *.json format.

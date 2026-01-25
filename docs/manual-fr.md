@@ -84,7 +84,7 @@ Modèle d'exemple fourni gracieusement par [SANSUI Taiwan](https://www.sansuitw.
 ---
 ## 🌟 Points forts de la version
 #### Points forts v1.0.0
-- Exporter / Importer / Ajouter à la liste 
+- Exporter / Importer / Ajouter à la liste  
   ![alt text](images/v100_001.png)  
   1. Ajout de trois fonctions dans les opérations de liste.
   2. L'exportation et l'importation utilisent le format *.json.

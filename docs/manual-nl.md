@@ -84,7 +84,7 @@ Met dank aan het Taiwanese merk [SANSUI / 山水品牌](https://www.sansuitw.com
 ---
 ## 🌟 Belangrijke updates
 #### v1.0.0 Belangrijke updates
-- Lijst exporteren / importeren / toevoegen 
+- Lijst exporteren / importeren / toevoegen  
   ![alt text](images/v100_001.png)  
   1. Drie nieuwe functies toegevoegd aan Lijstbewerkingen.
   2. Exporteren en importeren van lijsten gebeurt via *.json bestanden.

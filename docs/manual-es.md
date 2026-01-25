@@ -84,7 +84,7 @@ Modelo de ejemplo gracias a [SANSUI Taiwan](https://www.sansuitw.com/?gad_source
 ---
 ## 🌟 Novedades de la versión
 #### v1.0.0 Novedades
-- Exportar / Importar / Añadir lista 
+- Exportar / Importar / Añadir lista  
   ![alt text](images/v100_001.png)  
   1. Se agregaron tres funciones dentro de las operaciones de lista.
   2. La exportación e importación utilizan el formato *.json.
