@@ -2,27 +2,28 @@
 
 # User Manual (English)
 
-> This manual introduces the features and tips for the NLA-Stride Blender addon, and includes answers to some common known issues.
+> This manual introduces the features and tips for the NLA-Stride Blender Add-on, and provides answers to common known issues.
 
 ---
 
 ## 📘 Table of Contents
 
 1. [Quick Start](#-quick-start)  
-2. [Feature Overview](#-feature-overview)      
-3. [FAQ](#-faq) 
-4. [Others](#-others) 
-5. [Technical Reference](#-technical-reference)
+2. [Update Highlights](#-update-highlights)
+3. [Features Overview](#-features-overview)      
+4. [FAQ](#-faq) 
+5. [Others](#-others) 
+6. [Technical Reference](#-technical-reference)
 
 ---
 
 ## 🚀 Quick Start
 
-### 1. Addon Installation
+### 1. Add-on Installation
 
-1. Follow the official Blender installation steps (**[General Installation Guide](https://docs.blender.org/manual/en/latest/editors/preferences/addons.html)**)
+1. Follow the official Blender installation steps ( **[General Installation Guide](https://docs.blender.org/manual/en/latest/editors/preferences/addons.html)** )
 
-2. After installation, you can find the **NLA Stride Tool** in the Blender 3D Viewport under **Sidebar → Animation** tab. 
+2. After installation, you can find the **NLA Stride Tool** in the Blender 3D Viewport under the **Sidebar → Animation** tab. 
 <br>![alt text](images/img_1001.png)
 
 
@@ -34,23 +35,23 @@
   <img src="images/img_1002.png" width="650">
 </a>  
 
-Select one or more objects containing animation data. If they contain standard Actions instead of NLA strips, please refer to the "Batch Push to NLA" section later.  
+Select one or more objects containing animation data. If they contain default Actions instead of NLA Strips, please refer to the "Batch Push to NLA" section below.  
 
 ---
 
 ### 3. Add to List  
 ![alt text](images/img_1003.png)  
 
-⚠️ Note: The addon operates based on the list, regardless of the current viewport selection.  
+⚠️ Note: The add-on operates based on the list, regardless of the current selection in the viewport.  
 
 ---
 
-### 4. NLA Align / Offset Operations  
+### 4. NLA Alignment / Offset Operations  
 <a href="images/img_1004.png"><img src="images/img_1004.png" width="650"></a>  
 <a href="images/img_1005.png"><img src="images/img_1005.png" width="650"></a>  
 <a href="images/img_1006.png"><img src="images/img_1006.png" width="650"></a>  
 
-Above are demonstrations of NLA alignment and offset functions.  
+Above are demonstrations of the NLA Alignment and Offset features.  
 
 ---
 
@@ -72,37 +73,46 @@ Special thanks to the Taiwanese brand [SANSUI](https://www.sansuitw.com/?gad_sou
 
 ---
 
-## 🧰 Feature Overview
+## 🚀 Update Highlights
 
-#### 1. Data Source 
+- **Added Professional Mode**: Supports independent Falloff control for both Head and Tail of strips.
+- **Improved Selection Logic**: Now supports automatic detection of Material Slots.
+- **Performance Optimization**: Significant speed increase when processing a large number of objects.
+- **Multi-language Support**: Added support for English, German, French, Spanish, Dutch, Japanese, and Korean.
+
+---
+
+## 🧰 Features Overview
+
+#### 1. Animation Source 
 ![alt text](images/img_2001.png)  
 
 - A : Initialize and Add Selected  
-  Clears the list first, then adds currently selected objects from the scene.  
+  Clears the list first, then adds the objects currently selected in the scene.  
 <br>
 
 - B : Clear List  
-  Removes all data within the list.  
+  Clears all data in the list.  
 <br>
 
 - C : Animation Source  
   Currently supports three types: Object Animation / Shape Key Animation / Material Animation.  
 <br>
 
-- D : Add / Remove Items from List  
-  Adding **will not** clear existing items; objects are added to the end in the **order of selection**. If an object already in the list is selected, it will be moved to the end. The addition logic differs from A. Removal tool also differs from 1-J.  
+- D : Add / Remove List Items  
+  Adding will **NOT** clear the previous list; objects are added sequentially based on **selection order**. If an object is already in the list, it will be moved to the end. This logic differs from A. The removal tool is also different from 1-J.  
 <br>
 
 - E : List Operations (Dropdown Menu)  
   See "1-1 List Operations" for details.  
 <br>
 
-- F : Move Up / Down in List  
-  Manually adjust the order. Once manual adjustments are made, this result is defined as the **"Original Order"**.  
+- F : Move Item Up / Down  
+  Manually adjust the order. Once adjusted, this result is defined as the **"Original Order"**.  
 <br>
 
 - G : Push to NLA (Dropdown Menu)  
-  Converts active Actions to NLA strips only for objects in the list.  
+  Converts the current Action into NLA strips, only for objects in the list.  
 <br>
 
 - PS. [3. List Icon Meanings](#3-list-icon-meanings)  
@@ -111,46 +121,46 @@ Special thanks to the Taiwanese brand [SANSUI](https://www.sansuitw.com/?gad_sou
 ![alt text](images/img_2002.png)  
 
 - H : Initialize and Add Selected  
-  Clears the list first, then adds currently selected objects from the scene.  
+  Clears the list first, then adds the objects currently selected in the scene.  
 <br>
 
 - I : Four Sorting Options  
-  The most important is **Restore Original Order**, as this addon records this sequence. The other three are automated sorts.  
+  The most important is **Restore Original Order**, as this add-on records that sequence. The other three are automatic sorting methods.  
 <br>
 
-- J : Remove Scene Selected  
-  Removes objects from the list based on the current viewport selection. This differs from the 1-D removal tool.  
+- J : Remove Scene Selection  
+  Removes objects from the list based on the current selection in the viewport. This is different from the 1-D removal tool.  
 
 #### 2. Data Positioning
 ![alt text](images/img_2003.png)  
 
 - K : Three Strip Modes  
-  - Single Strip : Targets only one specific strip.  
-  - Single Track : Treats all strips on a single track as one group (relative positions remain unchanged).  
+  - Single Strip : Focuses on a single specified strip.  
+  - Single Track : Treats all strips within that track as a group (relative positions remain unchanged).  
   - All Tracks : Equivalent to changing all tracks of the object simultaneously (relative positions remain unchanged).  
 <br>
 
 - L : Three Positioning Points  
-  - Which Slot : (Material Mode only) Calculated **top-to-bottom** in the UI.  
-  - Which Track : Calculated **bottom-to-top** in the NLA editor.  
-  - Which Strip : Calculated **left-to-right** in the NLA editor.  
+  - Which Slot : (Material Mode only) Calculated from **top to bottom** in the UI.  
+  - Which Track : Calculated from **bottom to top** in the NLA Editor.  
+  - Which Strip : Calculated from **left to right** in the NLA Editor.  
 <br>
 
-  **!! Note: If the target is not correctly positioned, NLA Stride cannot perform offsets.** #### 3. NLA Align Tools (Initialization Values)
+  **!! Note: If the target positioning is incorrect, NLA Stride will not be able to perform the offset.** #### 3. NLA Align Tools (Initial Values)
 ![alt text](images/img_2004.png)  
 
-- M : Five Align Targets  
-  - By Max Start Frame : Aligns to the **start** of the **latest** starting strip in the list.  
-  - By Min Start Frame : Aligns to the **start** of the **earliest** starting strip (Commonly used).  
-  - By Max End Frame : Aligns to the **end** of the **latest** ending strip (Commonly used).  
-  - By Min End Frame : Aligns to the **end** of the **earliest** ending strip.  
-  - By Current Time : Aligns to the current playhead position (Most common).  
+- M : Five Alignment Targets  
+  - Align Max Start Frame : Aligns to the **start** point of the strip that starts **latest** in the list.  
+  - Align Min Start Frame : Aligns to the **start** point of the strip that starts **earliest** (Commonly used).  
+  - Align Max End Frame : Aligns to the **end** point of the strip that ends **latest** (Commonly used).  
+  - Align Min End Frame : Aligns to the **end** point of the strip that ends **earliest**.  
+  - Align Current Time : Aligns to the current playhead position (Most common).  
 <br>
 
-- N : Three Align Modes  
-  - Align Start : Aligns the left side of the strip to the target. Commonly used for **Starting** alignment.  
-  - Align Middle : Aligns the center of the strip to the target.  
-  - Align End : Aligns the right side of the strip to the target. Commonly used for **Ending** alignment.  
+- N : Three Alignment Modes  
+  - Align Start : The left side of the strip aligns with the target. Usually used for **Start** alignment.  
+  - Align Middle : The center of the strip aligns with the target.  
+  - Align End : The right side of the strip aligns with the target. Usually used for **End** alignment.  
 <br>
 
 - O : Reset Scale  
@@ -160,48 +170,48 @@ Special thanks to the Taiwanese brand [SANSUI](https://www.sansuitw.com/?gad_sou
 #### 4. Simple Mode
 ![alt text](images/img_2005.png)  
 
-- P : Falloff Mode [(Detailed Description)](#2-offset-description)  
+- P : Falloff Mode [(Detailed Description)](#2-offset-explanation)  
   - Four calculation formulas: 1. Linear / 2. Ease In / 3. Ease Out / 4. Ease In Out.  
 <br>
 
 - Q : Offset Amount (Unit: **Frames**)  
-  - This is not the gap between individual strips, but the total difference between the first and last object in the list (negative values allowed).  
+  - This is not the spacing between single strips, but the total difference from the first object to the last object in the list (negative values allowed).  
 <br>
 
 - R : Scale  
-  - Not an incremental scale, but the scale difference between the first and last object in the list (0 ~ 1).  
+  - Not incremental scaling, but the scale difference between the first and last object in the list (0 ~ 1).  
 <br>
 
-- S : Execute Simple NLA Stride (Repeated clicking will accumulate calculations).  
+- S : Run Simple NLA Stride (Repeated clicking will accumulate calculations).  
 <br>
 
 #### 5. Professional Mode
 ![alt text](images/img_2006.png)  
-  **>> The core of this addon. With simple settings, strip offsets and scales are adjusted automatically <<** - T : Falloff Mode [(Detailed Description)](#2-offset-description)  
+  **>> The core of this add-on. Through simple settings, it automatically adjusts strip offset and scaling <<** - T : Falloff Mode [(Detailed Description)](#2-offset-explanation)  
   - Four calculation formulas: 1. Linear / 2. Ease In / 3. Ease Out / 4. Ease In Out.  
 <br>
 
 - U : Set Start Frame  
-  - Sets the **Start** time for the entire animation sequence of all objects in the list.  
+  - Sets the **start** time for the entire animation sequence of all objects in the list.  
 <br>
 
 - V : Offset Ratio (Head)  
-  - Multiplied by the Falloff Mode (T) to calculate the offset, used for automated positioning of all strip start points.  
+  - Multiplied by the Falloff Mode (T) to calculate the offset value used to automatically position all strip start points.  
 <br>
 
-- W : Falloff Mode [(Detailed Description)](#2-offset-description)  
+- W : Falloff Mode [(Detailed Description)](#2-offset-explanation)  
   - Four calculation formulas: 1. Linear / 2. Ease In / 3. Ease Out / 4. Ease In Out.  
 <br>
 
 - X : Set End Frame  
-  - Sets the **End** time for the entire animation sequence of all objects in the list.  
+  - Sets the **end** time for the entire animation sequence of all objects in the list.  
 <br>
 
 - Y : Offset Ratio (Tail)  
-  - The offset ratio for the ending points of the strips.  
+  - The offset ratio for the end points of the strips.  
 <br>
 
-- Z : Execute Professional NLA Stride (Repeated clicking **will not** accumulate calculations).  
+- Z : Run Professional NLA Stride (Repeated clicking will **NOT** accumulate calculations).  
 <br>
 
 
@@ -210,49 +220,49 @@ Special thanks to the Taiwanese brand [SANSUI](https://www.sansuitw.com/?gad_sou
 ## ❓ FAQ
 
 
-#### 1. ⚠️ Be mindful of "Instanced Data"
+#### 1. ⚠️ Beware of "Instanced Data"
 
-This addon primarily processes the offset and alignment of NLA strips themselves; it **does not** automatically handle "Instanced Data" relationships within Blender.  
+This add-on primarily processes the offset and alignment of NLA strips themselves; it does **NOT** automatically manage "Instanced Data" relationships within Blender.  
 
 #### What is Instanced Data?
 
-When **multiple objects share the same data**, those data blocks are "Instanced."  
+When **multiple objects share the same data**, those data blocks are "instanced."  
 
 - For example:  
-  - Two objects sharing the same Material.  
+  - Two objects sharing the same material.  
   - Sharing the same Action, Mesh, or other data blocks.  
 
-In the NLA Editor, they may look like two independent strips, but they actually **point to the same underlying data**.
-As a result, when using **NLA Stride for offsetting**, the addon appears to move different strips, but in reality, it is modifying the same data block, thus **failing to achieve the expected offset effect**.
+In the NLA Editor, these might look like two independent strips, but in reality, they both **point to the same underlying data block**.
+This results in a situation where, when using **NLA Stride for offset**, the add-on appears to move different strips, but is actually modifying the same piece of data, thus **failing to achieve the expected offset effect**.
 
 
-#### ✅ Solution (Follow the steps below)
+#### ✅ Solution (Refer to the image steps)
 
-> 💡 **Core Strategy: Make data independent before offsetting.** Steps (as shown in the image):  
+> 💡 **Core Logic: Make data independent before performing the offset.** Steps (as shown in the image):  
 
 1. Select the objects to be processed in the 3D Viewport.  
-2. Open **Object → Relations**.  
+2. Go to **Object → Relations**.  
 3. Click **Make Single User**.  
 4. Select the data types that need to be independent (e.g., Object Animation).  
-5. Once data is independent, use **NLA Stride** for offsetting.  
+5. Once the data is independent, use **NLA Stride** to perform the offset.  
 
 
 
 ![alt text](images/img_3001.png)  
 
-> Once data is independent, each object will have its own unique NLA data.
-> NLA Stride will then be able to **offset NLA strips normally and predictably**.  
+> When data is independent, each object will have its own exclusive NLA data.
+> NLA Stride can then **properly and predictably help you offset the NLA strips**.  
 
 ---
 
 
-#### 2. ⚠️ Batch Creating NLA
+#### 2. ⚠️ Batch NLA Creation
 
-This addon targets NLA strips. If animation data hasn't been "pushed down" into NLA strips, it will not be affected.  
+The target of this add-on is NLA strips. If animation data has not yet been "Pushed Down" to become NLA strips, it will not be affected.  
 
 #### ✅ Solution: Push to NLA Tool
 
-The addon provides a batch conversion tool (indicated by green arrows below). Note that this applies to objects **in the list**, not the viewport selection.  
+The add-on provides a batch conversion tool (marked by the green arrow below). Note that the target is objects **in the list**, not the viewport selection.  
 
 ![alt text](images/img_3002.png)  
 
@@ -265,38 +275,38 @@ The addon provides a batch conversion tool (indicated by green arrows below). No
 
 #### 1. Alignment and Offset Strategy Tips
 
-- You can first press **Alt A** in the 3D Viewport to deselect everything, then use the **Select List Objects** function to verify exactly which objects are in your list.  
+- You can first press **Alt A** in the 3D Viewport to deselect all, then use the **Select List Objects** feature to accurately confirm who is in your list.  
 <br>
 
-- Because **Order** is crucial, it directly affects the animation state after offsetting. If possible, use naming conventions to determine order. If there are many objects, please process them in batches.  
+- **Order** is crucial as it directly affects the animation state after offset. Use naming conventions to determine order whenever possible. For large numbers of objects, please process in batches.  
 <br>
 
-- When things get messy, use the Alignment Tools to unify them first.  
+- If things get messy, use the alignment tools to unify everyone first.  
 <br>
 
-- Since animation offsetting becomes very easy, focus your energy on creating one **perfect movement**.  
+- Since animation offset becomes very easy, focus your energy on creating a **perfect dynamic feel**.  
 <br>
 
-- If your movement design includes **Location**, be careful when duplicating; the animation might jump back to the same position because location info is written in the NLA. In this case, use **Ctrl A** to apply transformations and write the new position into the **Delta Transforms** data.  
+- If your dynamic design involves **Location**, be careful when duplicating; when playing the animation, it might jump back to the same position because location information is hardcoded into the NLA. In this case, you can use the **Ctrl A** function to apply transformations and write the new position into the **Delta Transforms** data.  
 <br>![alt text](images/img_4001.png)  
 
 ---
 
-#### 2. Offset Description
-- Linear Stacking Mode :  
-  - Simple Mode :   
+#### 2. Offset Explanation
+- Linear Falloff Mode:  
+  - Simple Mode:   
   <a href="images/img_4002.png"><img src="images/img_4002.png" width="650"></a>  
-  Simple mode calculates based on the original state (leftmost in image). As shown, with Offset set to 100 and Scale to 1.5, the start point and length (ending point) of the last strip will always match; however, different falloff modes will change the distribution of the intermediate strips, creating different offset feelings.  
+  Simple Mode calculates based on the original state (far left in the image). As shown, with Offset 100 and Scale 1.5, the start point and length (end point) of the last strip will always be the same; however, you can see that due to different Falloff Modes, the start points of other strips vary, creating a different sense of offset.  
 
     ---
-  - Professional Mode :    
+  - Professional Mode:    
   <a href="images/img_4003.png"><img src="images/img_4003.png" width="650"></a>  
-  The only difference from Simple Mode is that Professional Mode allows you to control both the Head and Tail, providing two falloff settings to adjust separately.  
+  The only difference from Simple Mode is that Professional Mode allows independent control of the "Head" and "Tail," providing two separately adjustable Falloff Modes.  
   
     ---
-  - **Note** :   
+  - **Note**:   
   <a href="images/img_4004.png"><img src="images/img_4004.png" width="650"></a>  
-  If the falloff modes for Head and Tail are **different**, be careful as animation strips might become too short or disappear.  
+  Be aware that if the Head and Tail Falloff Modes are **different**, you need to check if the animation strips encounter issues (becoming too short or disappearing).  
 
 ---
 
@@ -306,20 +316,20 @@ The addon provides a batch conversion tool (indicated by green arrows below). No
 
 Icon A : Data Mode  
 Icon B : Action represents standard animation data (non-NLA).  
-Icon C : Available NLA data.  
+Icon C : Existing NLA data.  
 
-- The meaning of icons in B and C changes based on the Data Mode in column A:  
+- The meaning of icons B and C changes based on the data mode in column A:  
   - ✔ : Contains the **correct** data matching the mode in column A.  
-  - ・ : Contains data, but **not** of the type set in column A.  
+  - ・ : Contains data, but **NOT** of the type configured in column A.  
   - ✕ : No data found.  
 
-Data in viewport:  
+Data in Viewport:  
 | Item | Object Animation | Material Animation | Shape Key Animation |
 |------|------|------|--------|
 | **NLA Strip** | cube.049 | cube.050 | cube.051 | 
 | **Active Action** | cube.027 | cube.037 | cube.038 |  
 
-- Others : cube.000 (has all three types of NLA) / cube.039 (no animation data at all).  
+- Others: cube.000 (has all three NLA types) / cube.039 (no animation data).  
 
 ---
 
@@ -335,7 +345,8 @@ Data in viewport:
 ## 📘 Table of Contents
 
 1. [Quick Start](#-quick-start)  
-2. [Feature Overview](#-feature-overview)      
-3. [FAQ](#-faq) 
-4. [Others](#-others) 
-5. [Technical Reference](#-technical-reference)
+2. [Update Highlights](#-update-highlights)
+3. [Features Overview](#-features-overview)      
+4. [FAQ](#-faq) 
+5. [Others](#-others) 
+6. [Technical Reference](#-technical-reference)
