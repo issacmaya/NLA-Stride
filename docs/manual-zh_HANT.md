@@ -3,7 +3,7 @@
 
 <a href="images/NLA-Stride_LOGO2.png"><img src="images/NLA-Stride_LOGO2.png" width="250"></a>  
 
-# 使用手冊（中文）
+# 使用手冊
 
 > 本手冊介紹 NLA-Stride Blender 外掛的相關功能與一些技巧，也有一些常見的已知問題回答。
 

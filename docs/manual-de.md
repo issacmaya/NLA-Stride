@@ -1,41 +1,42 @@
 <a href="images/NLA-Stride_LOGO2.png"><img src="images/NLA-Stride_LOGO2.png" width="250"></a>  
 
-# Benutzerhandbuch (Deutsch)
+# Benutzerhandbuch 
 
-> Dieses Handbuch stellt die Funktionen und Tipps für das NLA-Stride Blender Add-on vor und beantwortet einige bekannte Probleme.
+> Dieses Handbuch stellt die Funktionen und Techniken des NLA-Stride Blender Add-ons vor und beantwortet einige häufige bekannte Probleme.
 
 ---
 
-## 📘 Inhalt
+## 📘 Inhaltsverzeichnis
 
-1. [Schnellstart](#-schnellstart)  
-2. [Version-Highlights](#-version-highlights)
-3. [Funktionsübersicht](#-funktionsübersicht)      
-4. [FAQ](#-faq) 
-5. [Andere Tipps](#-andere-tipps) 
-6. [Technisches Referenz](#-technisches-referenz)
+1. [Schnellstart](#Quick_Start)  
+2. [Update-Highlights](#Version_Updates)
+3. [Funktionsübersicht](#Feature_Overview)      
+4. [Häufig gestellte Fragen (FAQ)](#FAQ) 
+5. [Sonstiges](#Others) 
+6. [Technische Referenz](#Technical_Reference)
 
 ---
 
 ## 🚀 Schnellstart
+<a id="Quick_Start"></a>
 
-### 1. Add-on Installation
+### 1. Add-on-Installation
 
-1. Verwenden Sie die offiziellen Blender-Installationsschritte ( **[Allgemeine Installationsanleitung](https://docs.blender.org/manual/en/latest/editors/preferences/addons.html)** )
+1. Folgen Sie den offiziellen Installationsschritten von Blender ( **[Allgemeine Installationsanleitung](https://docs.blender.org/manual/en/latest/editors/preferences/addons.html)** )
 
-2. Nach der Installation finden Sie das **NLA Stride Tool** in der Blender 3D-Ansicht unter **Seitenleiste → Animation**. 
+2. Nach der Installation finden Sie das **NLA Stride Tool** im Blender 3D Viewport unter der Registerkarte **Seitenleiste → Animation**. 
 <br>![alt text](images/img_1001.png)
 
 
 
 ---
 
-### 2. Objekte mit Animationen auswählen  
+### 2. Objekte mit Animation auswählen  
 <a href="images/img_1002.png">
   <img src="images/img_1002.png" width="650">
 </a>  
 
-Wählen Sie ein oder mehrere Objekte aus, die Animationsdaten enthalten. Wenn Sie Standard-Animationen anstelle von NLA-Strips verwenden, lesen Sie bitte die Anweisungen unter „Push-Animation zum NLA“.
+Wählen Sie ein oder mehrere Objekte aus, die Animationsdaten enthalten. Wenn es sich um Standardanimationen statt NLA-Animationen handelt, lesen Sie bitte die Anweisungen unter „NLA-Stapelverarbeitung“.
 
 ---
 
@@ -43,11 +44,11 @@ Wählen Sie ein oder mehrere Objekte aus, die Animationsdaten enthalten. Wenn Si
 
 ![alt text](images/img_1003.png)
 
-⚠️ Hinweis: Das Add-on arbeitet auf Basis der Liste, unabhängig von den aktuell in der Szene ausgewählten Objekten.
+⚠️ Hinweis: Das Add-on arbeitet basierend auf der Liste, unabhängig von der aktuellen Objektauswahl im Viewport.
 
 ---
 
-### 4. NLA Ausrichtung / Versatz-Operationen
+### 4. NLA-Ausrichtung / Offset-Operationen
 
 
 <a href="images/img_1004.png"><img src="images/img_1004.png" width="650"></a>  
@@ -57,11 +58,11 @@ Wählen Sie ein oder mehrere Objekte aus, die Animationsdaten enthalten. Wenn Si
 <a href="images/img_1006.png"><img src="images/img_1006.png" width="650"></a>  
 
 
-Die obigen Diagramme veranschaulichen die NLA-Ausrichtungs- und Versatzfunktionen.
+Oben sehen Sie Demonstrationen der NLA-Ausrichtungs- und Offset-Funktionen.
 
 ---
 
-### 5. Animation genießen
+### 5. Genießen Sie die Animationsmagie
 
 <a href="images/DEMO_01.mp4">
   <img src="images/DEMO_01.gif" width="720">
@@ -79,212 +80,218 @@ Die obigen Diagramme veranschaulichen die NLA-Ausrichtungs- und Versatzfunktione
   <img src="images/DEMO_04.gif" width="720">
 </a>  
 
-Beispielmodell mit Dank an [SANSUI Taiwan](https://www.sansuitw.com/?gad_source=1&gad_campaignid=23085773952&gbraid=0AAAAAoXC59ENhboAZDO-y0zK4yQpidtXM&gclid=CjwKCAiAybfLBhAjEiwAI0mBBscjnZOEYBBY127EypNMfnL1h_Vqm_HACczeJBOqMK-euDJFPb1iAxoC7rkQAvD_BwE) für die Bereitstellung.
+Besonderer Dank geht an die taiwanesische Marke [SANSUI / 山水品牌](https://www.sansuitw.com/?gad_source=1&gad_campaignid=23085773952&gbraid=0AAAAAoXC59ENhboAZDO-y0zK4yQpidtXM&gclid=CjwKCAiAybfLBhAjEiwAI0mBBscjnZOEYBBY127EypNMfnL1h_Vqm_HACczeJBOqMK-euDJFPb1iAxoC7rkQAvD_BwE) für die Bereitstellung der Beispielmodelle.
 
 ---
-## 🌟 Version-Highlights
-#### v1.0.0 Highlights
-- Liste exportieren / importieren / hinzufügen  
+## 🌟 Update-Highlights
+<a id="Version_Updates"></a>
+  
+#### v1.0.0 Wichtige Updates
+- Liste exportieren / importieren / anhängen 
   ![alt text](images/v100_001.png)  
-  1. Drei Funktionen innerhalb der Listenoperationen hinzugefügt.
-  2. Export und Import verwenden das *.json Format.
-  3. „Hinzufügen“ fügt Elemente am Ende der Liste hinzu.
-  4. Bei Namensdopplungen hat das zuerst gefundene Objekt Vorrang.
-#### v0.9.8 Highlights  
-- Erste öffentliche Veröffentlichung  
+  1. Drei neue Funktionen zu den Listenoperationen hinzugefügt.
+  2. Export und Import erfolgen über *.json Dateien.
+  3. „Anhängen“ fügt Elemente am Ende der Liste hinzu.
+  4. Bei doppelten Namen hat das vorhandene Element Vorrang.
+#### v0.9.8 Wichtige Updates  
+- Erste öffentliche Version  
 ---
 ## 🧰 Funktionsübersicht
+<a id="Feature_Overview"></a>
+ 
 
-#### 1. Liste Initialisierungstool 
+#### 1. Animationsquelle 
 
 ![alt text](images/img_2001.png)
 
-- A : Initialisieren & Auswahl hinzufügen    
-  Löscht die Listendaten und fügt dann die aktuell ausgewählten Objekte aus der Szene hinzu.
+- A : Initialisieren und Ausgewählte hinzufügen    
+  Löscht die aktuellen Listendaten und fügt die in der Szene ausgewählten Objekte hinzu.  
   <br>
 - B : Liste leeren  
-  Löscht alle Daten in der Liste.
+  Löscht alle Daten in der Liste.  
   <br>
 - C : Animationsquelle  
-    Unterstützt derzeit drei Typen:
-    - Objekt-Animation  
-    - Shape-Key-Animation  
-    - Material-Animation
+    Unterstützt derzeit drei Typen:  
+    -  Objekt-Animation  
+    -  Shape-Key-Animation  
+    -  Material-Animation
   <br>
-- D : Objekte zur Liste hinzufügen / entfernen  
-  Hinzufügen löscht keine bestehenden Elemente; Objekte werden am Ende **in der Reihenfolge der Auswahl** hinzugefügt. Das Entfernen hier unterscheidet sich von 1-J.
+- D : Objekte in Liste hinzufügen / entfernen  
+  Beim Hinzufügen wird die Liste **nicht** geleert; Objekte werden **gemäß der Auswahlreihenfolge** am Ende hinzugefügt. Bereits vorhandene Objekte werden ans Ende verschoben. Dies unterscheidet sich von Methode A. Das Entfernen unterscheidet sich ebenfalls von 1-J.  
   <br>
 
 - E : Listenoperationen (Dropdown-Menü)  
-  Details siehe [1-1 Listenoperationen](#1-1-listenoperationen).
+  Details unter [1-1 Listenoperationen](#List_Functions).
   <br>
 
-- F : Ausgewähltes Element Hoch / Runter  
-  Manuelle Anpassung der Sortierung. Wenn die Reihenfolge angepasst wird, wird das Ergebnis als **„Originalreihenfolge“** definiert.
+- F : Ausgewähltes Element nach oben / unten bewegen  
+  Manuelle Anpassung der Reihenfolge. Sobald die Reihenfolge manuell geändert wurde, wird dies als **„Gecachte Originalreihenfolge“** definiert.
   <br>
 
-- G : Push-Animation zum NLA (Dropdown-Menü)  
-  Konvertiert Animationen in NLA-Strips nur für Objekte in der Liste.
+- G : In NLA umwandeln (Dropdown-Menü)  
+  Konvertiert nur die Objekte in der Liste in NLA-Strips.
   <br>  
   
--  PS. [3. Legende für Listensymbole](#3-legende-für-listensymbole)
+-  PS. [3. Bedeutung der Symbole in der Liste](#List_Icon_Meanings)
 
 #### 1-1. Listenoperationen
+<a id="List_Functions"></a>
 
 ![alt text](images/img_2002.png)
 
-- H : Initialisieren & Auswahl hinzufügen   
-  Löscht die Listendaten und fügt die aktuell ausgewählten Objekte hinzu.
+- H : Initialisieren und Ausgewählte hinzufügen   
+  Löscht die Listendaten und fügt die in der Szene ausgewählten Objekte hinzu.
   <br>
 
-- I : Sortierstatus    
-  Beinhaltet **Originalreihenfolge** (die das Add-on verfolgt) und drei andere Sortiermethoden.
+- I : Vier Sortierzustände    
+  Der wichtigste ist die vom Add-on aufgezeichnete **Originalreihenfolge**; die anderen drei sind temporäre Sortierzustände.
   <br>
 
-- J : In Szene Ausgewähltes entfernen   
-  Entfernt Objekte, die aktuell in der Szene ausgewählt sind, aus der Liste.
+- J : Ausgewählte aus Szene entfernen   
+  Entfernt die derzeit in der 3D-Szene ausgewählten Objekte aus der Liste (anders als 1-D).
   <br>
 
-#### 2. Offset-Strips angeben
+#### 2. Offset-Strips festlegen
 
 ![alt text](images/img_2003.png)
 
-- K : Strip-Modus  
-  - Einzelner Strip: Zielt nur auf einen bestimmten Strip ab.
-  - Einzelne Spur: Behandelt alle Strips auf einer Spur als eine Einheit (behält relative Positionen bei).
-  - Alle Spuren: Alle Spuren des Objekts ändern sich gemeinsam (behält relative Positionen bei).
+- K : Drei Strip-Modi (Strip-Modus)  
+  - Einzelner Strip : Bezieht sich nur auf einen bestimmten Strip.
+  - Einzelne Spur : Behandelt alle Strips auf einer Spur als eine Einheit (relative Positionen bleiben erhalten).
+  - Alle Spuren : Alle Spuren des Objekts ändern sich gemeinsam (relative Positionen bleiben erhalten).
   <br>
 
-- L : Slot/Spur/Strip Positionierung  
-  - Slot: Nur Materialmodus, wird von **oben nach unten** in der Benutzeroberfläche berechnet.
-  - Spur: Wird von **unten nach oben** im NLA-Editor berechnet.
-  - Strip: Wird von **links nach rechts** im NLA-Editor berechnet.
+- L : Drei Lokalisatoren  
+  - Welcher Slot : Nur für Material-Modus, berechnet von **oben nach unten** im NLA-Interface.
+  - Welche Spur : Berechnet von **unten nach oben** im NLA-Interface.
+  - Welcher Strip : Berechnet von **links nach rechts** im NLA-Interface.
   <br>
 
-  **!! Hinweis: Wenn das Ziel nicht korrekt lokalisiert ist, kann NLA Stride nicht funktionieren.**
+  **!! HINWEIS: Wenn das Ziel nicht korrekt spezifiziert ist, kann kein NLA-Offset ausgeführt werden.**
 
-#### 3. NLA Ausrichtungswerkzeuge (Initialisierungswerte)
+#### 3. NLA-Ausrichtungstools (Initialisierungswerte)
 ![alt text](images/img_2004.png)
 
-- M : Ausrichtungsmodus Ziel  
-  - Nach max. Start-Frame: Richtet am **Start** des am **spätesten** beginnenden Strips in der Liste aus.
-  - Nach min. Start-Frame: Richtet am **Start** des am **frühesten** beginnenden Strips in der Liste aus (Häufig).
-  - Nach max. End-Frame: Richtet am **Ende** des am **spätesten** endenden Strips in der Liste aus (Häufig).
-  - Nach min. End-Frame: Richtet am **Ende** des am **frühesten** endenden Strips in der Liste aus.
-  - Nach aktueller Zeit: Richtet an der aktuellen Abspielposition aus (Am häufigsten).
+- M : Fünf Ausrichtungsmodi (Ausrichtungsmodus)  
+  - Nach max. Startframe : Basierend auf dem **spätesten** Startpunkt der Strips in der Liste.
+  - Nach min. Startframe : Basierend auf dem **frühesten** Startpunkt der Strips in der Liste (Häufig genutzt).
+  - Nach max. Endframe : Basierend auf dem **spätesten** Endpunkt der Strips in der Liste (Häufig genutzt).
+  - Nach min. Endframe : Basierend auf dem **frühesten** Endpunkt der Strips in der Liste.
+  - Nach aktueller Zeit : Basierend auf der aktuellen Position des Abspielkopfs (Am häufigsten genutzt).
   <br>
 
-- N : Ausrichtungsposition  
-  - An Start ausrichten: Richtet die linke Seite am Ziel aus.
-  - An Mitte ausrichten: Richtet die Mitte am Ziel aus.
-  - An Ende ausrichten: Richtet die rechte Seite am Ziel aus.
+- N : Drei Ausrichtungsmethoden  
+  - Start ausrichten : Richtet die linke Seite am Ziel aus (häufig für Startpunkte).
+  - Mitte ausrichten : Richtet die Mitte am Ziel aus.
+  - Ende ausrichten : Richtet die rechte Seite am Ziel aus (häufig für Endpunkte).
   <br>
 
 - O : Skalierung zurücksetzen  
-  Setzt die Skalierung aller angegebenen NLA-Strips in der Liste auf 1 zurück.
+  Setzt den Skalierungswert aller NLA-Strips in der Liste auf 1 zurück.
   <br>
 
 
 #### 4. Einfacher Modus
 
 ![alt text](images/img_2005.png)  
-- P : Falloff (Einfacher Modus) [(Detaillierte Beschreibung)](#2-versatzbeschreibung)  
-  Vier Berechnungsformeln: 1. Linear / 2. Ease In / 3. Ease Out / 4. Ease In Out.
+- P : Falloff im einfachen Modus [(Detaillierte Erklärung)](#Stride_Description)  
+  Es gibt vier Formeln für die Offset-Berechnung: 1. Linear / 2. Ease In / 3. Ease Out / 4. Ease In Out.
   <br>
 
-- Q : Versatzbetrag (Einheit: **Frames**)  
-  Nicht der äquidistante Abstand zwischen den Strips, sondern die Gesamtdifferenz zwischen dem ersten und dem letzten Objekt in der Liste (erlaubt negative Werte).
+- Q : Offset-Betrag (Einheit: **Frames**)  
+  Dies ist die Gesamtdifferenz zwischen dem ersten und dem letzten Objekt in der Liste (negative Werte möglich).
   <br>
 
 - R : Skalierung  
-  Nicht die äquidistante Skalierung, sondern die Skalierungsdifferenz zwischen dem ersten und dem letzten Objekt (0 ~ 1).
+  Dies ist die Skalierungsdifferenz zwischen dem ersten und dem letzten Objekt in der Liste (0 ~ 1).
   <br>
 
-- S : Einfachen NLA Stride ausführen (Werte summieren sich bei wiederholtem Drücken).
+- S : Einfaches NLA-Stride ausführen (Wiederholtes Klicken kumuliert die Berechnung).
   <br>
 
 #### 5. Profi-Modus
 ![alt text](images/img_2006.png)  
-  **>> Das Kernmerkmal: Definieren Sie Start- und Endpunkte, und Strips werden automatisch versetzt und skaliert. <<**
+  **>> Der Kern dieses Add-ons: Mit einfachen Einstellungen werden Offset und Skalierung der Strips automatisch angepasst <<**
 
-- T : Pro Start Falloff [(Detaillierte Beschreibung)](#2-versatzbeschreibung)  
-  Berechnungsformel für den Versatz: Linear, Ease In, Ease Out oder Ease In Out.
+- T : Profi-Start-Falloff [(Detaillierte Erklärung)](#Stride_Description)  
+  Vier Formeln: 1. Linear / 2. Ease In / 3. Ease Out / 4. Ease In Out.
   <br>
 
-- U : Start-Frame setzen  
-  Legt die globale **Startzeit** für die gesamte Animationssequenz in der Liste fest.
+- U : Startframe festlegen  
+  Legt die **Startzeit** der Gesamtanimation für alle Objekte in der Liste fest.
   <br>
 
-- V : Versatzverhältnis  
-  Der Versatzbetrag multipliziert mit dem Falloff-Modus (T), wird verwendet, um Start-Frame-Positionen zu automatisieren.
+- V : Offset-Verhältnis (Start)    
+  Der mit dem Falloff (T) multiplizierte Offset-Betrag, der zur automatischen Einstellung der Startpunkte aller Strips verwendet wird.
   <br>
 
-- W : Pro End Falloff [(Detaillierte Beschreibung)](#2-versatzbeschreibung)    
-  Berechnungsformel für den Versatz: Linear, Ease In, Ease Out oder Ease In Out.
+- W : Profi-End-Falloff [(Detaillierte Erklärung)](#Stride_Description)    
+  Vier Formeln: 1. Linear / 2. Ease In / 3. Ease Out / 4. Ease In Out.
   <br>
 
-- X : End-Frame setzen    
-  Legt die globale **Endzeit** für die gesamte Animationssequenz in der Liste fest.
+- X : Endframe festlegen    
+  Legt die **Endzeit** der Gesamtanimation für alle Objekte in der Liste fest.
   <br>
 
-- Y : Versatzverhältnis    
-  Differenz zwischen den End-Frames des ersten und letzten Objekts (erlaubt negative Werte).
+- Y : Offset-Verhältnis (Ende)    
+  Differenz zwischen dem ersten und letzten Objekt (negative Werte möglich).
   <br>
 
-- Z : Profi NLA Stride ausführen (Werte summieren sich **nicht**).
+- Z : Profi-NLA-Stride ausführen (Wiederholtes Klicken kumuliert **nicht**).
   <br>
 
 
 ---
 
-## ❓ FAQ
+## ❓ Häufig gestellte Fragen (FAQ)
+<a id="FAQ"></a>
 
 
-#### 1. ⚠️ Vorsicht mit Details zu „Instanziierte Daten (Instanced Data)“
+#### 1. ⚠️ Beachten Sie Details zu „Instanzierten Daten (Instanced Data)“
 
-Dieses Add-on zielt auf die NLA-Strips selbst für Versatz und Ausrichtung ab,  
-es behandelt **nicht** automatisch die Blender-Beziehungen für „Instanziierte Daten“.
+Dieses Add-on konzentriert sich primär auf das Verschieben und Ausrichten der NLA-Strips selbst  
+und verarbeitet **nicht** automatisch die „Instanced Data“-Beziehungen von Blender.
 
-#### Was sind instanziierte Daten?
+#### Was sind instanzierte Daten?
 
-Wenn **mehrere Objekte denselben Datenblock teilen**, sind diese Daten „Instanziiert“.
+Wenn **mehrere Objekte dieselben Datenblöcke teilen**, sind diese Daten „instanziert“.
 
 - Zum Beispiel:  
   - Zwei Objekte teilen sich dasselbe Material.  
-  - Teilen sich dieselbe Action, dasselbe Mesh oder andere Datenblöcke.  
+  - Oder sie teilen dieselbe Action (Animation), Mesh oder andere Datenblöcke.  
 
-Im NLA-Editor sehen sie wie zwei unabhängige Strips aus, aber sie **verweisen hinter den Kulissen auf dieselben Daten**.
-Infolgedessen bewegt das Add-on beim Verwenden von **NLA Stride zum Versetzen** zwar die Strips, da diese aber dieselben zugrunde liegenden Daten beeinflussen, wird der **erwartete Versatzeffekt nicht erzielt**.
+Im NLA-Editor sehen diese wie unabhängige Strips aus, aber sie **verweisen auf dieselben zugrunde liegenden Daten**.
+Das Ergebnis ist, dass bei Verwendung von **NLA Stride für den Offset** das Add-on zwar Strips zu verschieben scheint, diese aber immer noch dieselben Daten beeinflussen, wodurch der **gewünschte Offset-Effekt nicht erreicht wird**.
 
 
-#### ✅ Lösung (Folgen Sie dem Screenshot unten)
+#### ✅ Lösung (Folgen Sie diesen Schritten)
 
-> 💡 **Wichtige Praxis: Daten vor dem Versetzen unabhängig machen**
+> 💡 **Kernlösung: Machen Sie die Daten vor dem Offset unabhängig (Single User).**
 
-Schritte:
+Schritte (wie im Bild gezeigt):
 
-1. Wählen Sie die Objekte in der 3D-Ansicht aus.  
-2. Gehen Sie zu **Objekt →关聯資料 (Relations)**.  
-3. Klicken Sie auf **使單一使用者 (Make Single User)**.  
-4. Wählen Sie die Datentypen aus, die unabhängig sein müssen.
-5. Sobald die Daten unabhängig sind, verwenden Sie **NLA Stride**, um sie zu versetzen.  
+1. Wählen Sie die Objekte im 3D Viewport aus.  
+2. Gehen Sie zu **Objekt → Beziehungen (Relations)**.  
+3. Klicken Sie auf **Einzelnutzer machen (Make Single User)**.  
+4. Wählen Sie den gewünschten Datentyp (z.B. Objekt-Animation).
+5. Nachdem die Daten unabhängig sind, verwenden Sie **NLA Stride** für den Offset.  
 
 
 
 ![alt text](images/img_3001.png)
 
-> Sobald die Daten unabhängig sind, hat jedes Objekt seine eigenen „wirklich einzigartigen NLA-Daten“.
-> NLA Stride wird dann **NLA-Strips normal und vorhersehbar versetzen**.
+> Sobald die Daten unabhängig sind, hat jedes Objekt seine eigenen „echten NLA-Daten“.
+> NLA Stride kann dann **NLA-Strips normal und vorhersehbar verschieben**.
 ---
 
 
-#### 2. ⚠️ Batch-Push zum NLA
+#### 2. ⚠️ NLA-Stapelverarbeitung
 
-Dieses Add-on arbeitet speziell auf NLA-Strips. Animationsdaten, die noch nicht zum NLA gepusht wurden, werden nicht beeinflusst.
+Dieses Add-on verarbeitet NLA-Strips. Animationen, die noch nicht in NLA-Strips umgewandelt wurden (Aktive Actions), werden nicht beeinflusst.
 
-#### ✅ Lösung: Batch-Konvertierungswerkzeug
+#### ✅ Lösung: Stapelverarbeitungs-Tool
 
-Das Add-on bietet ein Werkzeug, um Animationen für alle Objekte **in der Liste** zum NLA zu pushen (grüner Pfeil unten). Hinweis: Dies zielt auf die Liste ab, nicht nur auf die 3D-Auswahl.
+Das Add-on bietet ein Tool, um Objekte in der Liste in einem Rutsch in NLA umzuwandeln (grüner Pfeil unten). Hinweis: Dies betrifft die **Liste**, nicht nur die 3D-Auswahl.
 
 ![alt text](images/img_3002.png)
 
@@ -292,72 +299,77 @@ Das Add-on bietet ein Werkzeug, um Animationen für alle Objekte **in der Liste*
 
 
 
-## 📖 Andere Tipps
+## 📖 Sonstiges
+<a id="Others"></a>
 
 
-#### 1. Ausrichtungs- und Versatzstrategie
+#### 1. Tipps für Ausrichtungs- und Offset-Strategien
 
-- Sie können **Alt A** in der 3D-Ansicht drücken, um alles abzuwählen, und dann die Funktion **Listenobjekte auswählen** verwenden, um zu überprüfen, welche Objekte sich genau in Ihrer Liste befinden.  
+- Sie können im 3D Viewport **Alt A** drücken, um alles abzuwählen, und dann die Funktion **Listenobjekte auswählen** nutzen, um zu prüfen, was genau in der Liste enthalten ist.  
 <br>
 
-- Da die **Reihenfolge** entscheidend ist (sie beeinflusst direkt das Versatzergebnis), versuchen Sie, Namen zur Bestimmung der Reihenfolge zu verwenden. Wenn Sie viele Objekte haben, bearbeiten Sie diese in Chargen.  
+- Die **Reihenfolge** ist sehr wichtig, da sie den Animationszustand nach dem Offset direkt beeinflusst. Nutzen Sie wenn möglich Namen zur Bestimmung der Reihenfolge. Bei sehr vielen Objekten empfiehlt sich die Stapelverarbeitung oder die Nutzung der [`Export / Import`](#Version_Updates) Funktion.  
 <br>
 
-- Wenn es unübersichtlich wird, verwenden Sie das Ausrichtungswerkzeug, um alles auf einen einheitlichen Startpunkt zurückzusetzen.  
+- Wenn es unübersichtlich wird, nutzen Sie die Ausrichtungstools, um alles wieder auf einen Ausgangspunkt zu synchronisieren.  
 <br>
 
-- Da das Versetzen einfach wird, konzentrieren Sie sich zuerst darauf, eine **perfekte dynamische Bewegung** zu erstellen.  
+- Da Animations-Offsets nun sehr einfach sind, konzentrieren Sie sich darauf, eine **perfekte Bewegung** zu erstellen.  
 <br>
 
-- Wenn Ihre Animation **Positionen (Location)** beinhaltet, könnten Duplikate an dieselbe Stelle zurückspringen. Verwenden Sie **Ctrl A**, um Transformationen auf die **增減變換 (Delta Transform)** Daten anzuwenden.  
+- Zum Bewegungsdesign: Wenn die **Position** per Keyframe festgelegt ist, beachten Sie beim Kopieren, dass die Animation zur selben Position zurückspringt, da die Positionsdaten im NLA festgeschrieben sind. Nutzen Sie in diesem Fall **Ctrl A** (Transformation anwenden), um die neue Position in die **Delta-Transform** Daten zu schreiben.  
   <br>![alt text](images/img_4001.png)  
 
 ---
 
-#### 2. Versatzbeschreibung
-- Linearer Falloff-Modus:  
-  - Einfacher Modus:   
+#### 2. Stride-Erklärung
+<a id="Stride_Description"></a>
+
+- Linearer Stapelmodus :  
+  - Einfacher Modus :   
   <a href="images/img_4002.png"><img src="images/img_4002.png" width="650"></a>  
-  Der einfache Modus berechnet basierend auf dem Originalzustand (links). Beispiel: Versatz 100, Skalierung 1.5. Der Startpunkt und die Länge des letzten Strips entsprechen den Einstellungen, aber die dazwischen liegenden Strips variieren je nach Falloff-Modus.
+  Der einfache Modus berechnet basierend auf dem Originalzustand (ganz links im Bild). Bei beispielsweise Offset 100 und Skalierung 1.5 werden Startpunkt und Länge des letzten Strips immer gleich sein; aber die verschiedenen Falloff-Modi erzeugen unterschiedliche Zwischen-Startpunkte, was ein anderes Offset-Gefühl vermittelt.
 
     ---
-  - Profi-Modus:    
+  - Profi-Modus :    
   <a href="images/img_4003.png"><img src="images/img_4003.png" width="650"></a>  
-  Im Gegensatz zum einfachen Modus steuert der Profi-Modus sowohl den Anfang als auch das Ende, was separate Falloff-Modi für beide ermöglicht.  
+  Im Unterschied zum einfachen Modus kann der Profi-Modus Anfang und Ende separat steuern, wodurch für beide ein eigener Falloff-Modus eingestellt werden kann.  
   
     ---
-  - **Hinweis**:   
+  - **Achtung** :   
   <a href="images/img_4004.png"><img src="images/img_4004.png" width="650"></a>  
-  Wenn die Falloff-Modi für Start und Ende **unterschiedlich** sind, achten Sie darauf, dass Strips nicht zu kurz werden oder verschwinden.
+  Wenn die Falloff-Modi für Anfang und Ende **unterschiedlich** sind, achten Sie darauf, ob die Animationsstrips zu kurz werden oder verschwinden.
 ---
 
-#### 3. Legende für Listensymbole
+#### 3. Bedeutung der Symbole in der Liste
+<a id="List_Icon_Meanings"></a>
 
 ![alt text](images/img_3003.gif)
 
-Symbol A: Animationsquellen-Modus
-Symbol B: Action repräsentiert allgemeine Animationsdaten (Noch nicht im NLA)
-Symbol C: Verfügbare NLA-Daten
+Symbol A : Datenmodus
+Symbol B : Action steht für allgemeine Animationsdaten (kein NLA)
+Symbol C : Verfügbare NLA-Daten
 
-- Die Symbole in B und C ändern sich basierend auf dem Quellen-Modus (A):
-  - ✔ : Enthält **korrekte** Daten, die mit Modus A übereinstimmen.
-  - ・: Enthält Daten, die aber **NICHT** mit Modus A übereinstimmen.
-  - ✕ : Keine Daten gefunden.
+- Die Bedeutung der Symbole in B und C ändert sich je nach im Spalte A ausgewähltem Datenmodus:
+  - ✔ : Enthält **korrekte** Daten passend zum Modus in Spalte A.
+  - ・ : Enthält Daten, aber **nicht** vom in Spalte A eingestellten Typ.
+  - ✕ : Enthält keine Daten.
 
 Daten im Beispiel:
-| Element | Objekt Anim | Material Anim | Shape-Key Anim |
+| Element | Objekt-Animation | Material-Animation | Shape-Key-Animation |
 |------|------|------|--------|
 | **NLA Strip** | cube.049 | cube.050 | cube.051 | 
-| **Aktiv Aktion** | cube.027 | cube.037 | cube.038 | 
+| **Aktive Action** | cube.027 | cube.037 | cube.038 | 
 
-- Andere: cube.000 (Hat NLA für alle 3 Typen) / cube.039 (Überhaupt keine Animationsdaten)
+- Sonstiges: cube.000 (Hat alle 3 NLA-Typen) / cube.039 (Hat keinerlei Animationsdaten)
 
 ---
 
 
 
 
-## 🔧 Technisches Referenz
+## 🔧 Technische Referenz
+<a id="Technical_Reference"></a>
 
   [Blender NLA Offizielles Handbuch](https://docs.blender.org/manual/en/latest/editors/nla/index.html)
 
@@ -366,11 +378,11 @@ Daten im Beispiel:
   
 
 
-## 📘 Inhalt
+## 📘 Inhaltsverzeichnis
 
-1. [Schnellstart](#-schnellstart) 
-2. [Version-Highlights](#-version-highlights) 
-3. [Funktionsübersicht](#-funktionsübersicht)      
-4. [FAQ](#-faq) 
-5. [Andere Tipps](#-andere-tipps) 
-6. [Technisches Referenz](#-technisches-referenz)
+1. [Schnellstart](#Quick_Start) 
+2. [Update-Highlights](#Version_Updates) 
+3. [Funktionsübersicht](#Feature_Overview)      
+4. [Häufig gestellte Fragen (FAQ)](#FAQ) 
+5. [Sonstiges](#Others) 
+6. [Technische Referenz](#Technical_Reference)

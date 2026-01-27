@@ -1,6 +1,6 @@
 <a href="images/NLA-Stride_LOGO2.png"><img src="images/NLA-Stride_LOGO2.png" width="250"></a>  
 
-# Gebruikershandleiding (Nederlands)
+# Gebruikershandleiding
 
 > Deze handleiding introduceert de functies en technieken van de NLA-Stride Blender add-on, evenals antwoorden op enkele veelvoorkomende bekende problemen.
 
@@ -8,16 +8,17 @@
 
 ## 📘 Inhoudsopgave
 
-1. [Snel aan de slag](#-snel-aan-de-slag)  
-2. [Belangrijke updates](#-belangrijke-updates)
-3. [Functieoverzicht](#-functieoverzicht)      
-4. [Veelgestelde vragen](#-veelgestelde-vragen) 
-5. [Overige](#-overige) 
-6. [Technische referentie](#-technische-referentie)
+1. [Snel aan de slag](#Quick_Start)  
+2. [Belangrijke updates](#Version_Updates)
+3. [Functieoverzicht](#Feature_Overview)      
+4. [Veelgestelde vragen](#FAQ) 
+5. [Overige](#Others) 
+6. [Technische referentie](#Technical_Reference)
 
 ---
 
 ## 🚀 Snel aan de slag
+<a id="Quick_Start"></a>
 
 ### 1. Installatie van de add-on
 
@@ -83,8 +84,10 @@ Met dank aan het Taiwanese merk [SANSUI / 山水品牌](https://www.sansuitw.com
 
 ---
 ## 🌟 Belangrijke updates
+<a id="Version_Updates"></a>
+  
 #### v1.0.0 Belangrijke updates
-- Lijst exporteren / importeren / toevoegen  
+- Lijst exporteren / importeren / toevoegen 
   ![alt text](images/v100_001.png)  
   1. Drie nieuwe functies toegevoegd aan Lijstbewerkingen.
   2. Exporteren en importeren van lijsten gebeurt via *.json bestanden.
@@ -94,8 +97,10 @@ Met dank aan het Taiwanese merk [SANSUI / 山水品牌](https://www.sansuitw.com
 - Eerste publieke release  
 ---
 ## 🧰 Functieoverzicht
+<a id="Feature_Overview"></a>
+ 
 
-#### 1. Lijst initialisatie tool 
+#### 1. Animatiebron 
 
 ![alt text](images/img_2001.png)
 
@@ -116,7 +121,7 @@ Met dank aan het Taiwanese merk [SANSUI / 山水品牌](https://www.sansuitw.com
   <br>
 
 - E : Lijstbewerkingen (Dropdown menu)  
-  Zie details bij [1-1 Lijstbewerkingen](#1-1-lijstbewerkingen).
+  Zie details bij [1-1 Lijstbewerkingen](#List_Functions).
   <br>
 
 - F : Geselecteerd item Omhoog / Omlaag  
@@ -127,9 +132,10 @@ Met dank aan het Taiwanese merk [SANSUI / 山水品牌](https://www.sansuitw.com
   Converteert alleen de objecten in de lijst naar NLA-strips.
   <br>  
   
--  PS. [3. Betekenis van iconen in de lijst](#3-betekenis-van-de-iconen-in-de-lijst)
+-  PS. [3. Betekenis van de iconen in de lijst](#List_Icon_Meanings)
 
 #### 1-1. Lijstbewerkingen
+<a id="List_Functions"></a>
 
 ![alt text](images/img_2002.png)
 
@@ -157,8 +163,8 @@ Met dank aan het Taiwanese merk [SANSUI / 山水品牌](https://www.sansuitw.com
 
 - L : Drie lokatie-instellingen  
   - Welk Slot : Alleen voor Materiaal Modus, berekend van **boven naar beneden** in de NLA-interface.
-  - Welk Spoor : Alleen voor Materiaal Modus, berekend van **onder naar boven** in de NLA-interface.
-  - Welke Strip : Alleen voor Materiaal Modus, berekend van **links naar rechts** in de NLA-interface.
+  - Welk Spoor : Berekend van **onder naar boven** in de NLA-interface.
+  - Welke Strip : Berekend van **links naar rechts** in de NLA-interface.
   <br>
 
   **!! LET OP: Als het doel niet correct is gespecificeerd, kan NLA geen offset uitvoeren.**
@@ -175,9 +181,9 @@ Met dank aan het Taiwanese merk [SANSUI / 山水品牌](https://www.sansuitw.com
   <br>
 
 - N : Drie uitlijningsmethoden  
-  - Uitlijnen op begin : Lijn de linkerzijde uit op het doel.
+  - Uitlijnen op begin : Lijn de linkerzijde uit op het doel (veelgebruikt voor startpunten).
   - Uitlijnen op midden : Lijn het midden uit op het doel.
-  - Uitlijnen op einde : Lijn de rechterzijde uit op het doel.
+  - Uitlijnen op einde : Lijn de rechterzijde uit op het doel (veelgebruikt voor eindpunten).
   <br>
 
 - O : Schaal resetten  
@@ -188,16 +194,16 @@ Met dank aan het Taiwanese merk [SANSUI / 山水品牌](https://www.sansuitw.com
 #### 4. Eenvoudige modus
 
 ![alt text](images/img_2005.png)  
-- P : Eenvoudige modus afname [(Gedetailleerde uitleg)](#2-offset-uitleg)  
+- P : Eenvoudige modus afname [(Gedetailleerde uitleg)](#Stride_Description)  
   Er zijn vier formules voor de offset-berekening: 1. Lineair / 2. Ease In / 3. Ease Out / 4. Ease In Out.
   <br>
 
 - Q : Offset bedrag (Eenheid: **Frames**)  
-  Dit is niet de afstand tussen individuele strips, maar het totale verschil tussen het eerste en het laatste object in de lijst (negatieve waarden zijn mogelijk).
+  Dit is het totale verschil tussen het eerste en het laatste object in de lijst (negatieve waarden zijn mogelijk).
   <br>
 
 - R : Schaal  
-  Dit is niet de individuele schaal, maar het verschil in schaal tussen het eerste en het laatste object in de lijst (0 ~ 1).
+  Dit is het verschil in schaal tussen het eerste en het laatste object in de lijst (0 ~ 1).
   <br>
 
 - S : Voer eenvoudige NLA Stride uit (Herhaaldelijk klikken cumuleert de berekening).
@@ -207,7 +213,7 @@ Met dank aan het Taiwanese merk [SANSUI / 山水品牌](https://www.sansuitw.com
 ![alt text](images/img_2006.png)  
   **>> De kern van deze add-on: met eenvoudige instellingen worden offset en schaal automatisch aangepast <<**
 
-- T : Pro begin afname [(Gedetailleerde uitleg)](#2-offset-uitleg)  
+- T : Pro begin afname [(Gedetailleerde uitleg)](#Stride_Description)  
   Vier berekeningsformules: 1. Lineair / 2. Ease In / 3. Ease Out / 4. Ease In Out.
   <br>
 
@@ -219,7 +225,7 @@ Met dank aan het Taiwanese merk [SANSUI / 山水品牌](https://www.sansuitw.com
   De hoeveelheid offset vermenigvuldigd met de afname (T), gebruikt om automatisch de beginpunten van alle strips in te stellen.
   <br>
 
-- W : Pro einde afname [(Gedetailleerde uitleg)](#2-offset-uitleg)    
+- W : Pro einde afname [(Gedetailleerde uitleg)](#Stride_Description)    
   Vier berekeningsformules: 1. Lineair / 2. Ease In / 3. Ease Out / 4. Ease In Out.
   <br>
 
@@ -238,6 +244,7 @@ Met dank aan het Taiwanese merk [SANSUI / 山水品牌](https://www.sansuitw.com
 ---
 
 ## ❓ Veelgestelde vragen
+<a id="FAQ"></a>
 
 
 #### 1. ⚠️ Let op de details van "Gedeelde gegevens (Instanced Data)"
@@ -293,6 +300,7 @@ De add-on biedt een tool om objecten in de lijst in één keer te converteren na
 
 
 ## 📖 Overige
+<a id="Others"></a>
 
 
 #### 1. Tips voor Uitlijning en Offset strategieën
@@ -300,10 +308,10 @@ De add-on biedt een tool om objecten in de lijst in één keer te converteren na
 - Je kunt in de 3D Viewport op **Alt A** drukken om alles te deselecteren en vervolgens de functie **Selecteer lijstobjecten** gebruiken om te controleren welke objecten precies in de lijst staan.  
 <br>
 
-- De **volgorde** is erg belangrijk omdat deze direct de animatiestatus na de offset beïnvloedt. Gebruik indien mogelijk namen om de volgorde te bepalen. Bij zeer veel objecten kun je deze in groepen verwerken.  
+- De **volgorde** is erg belangrijk omdat deze direct de animatiestatus na de offset beïnvloedt. Gebruik indien mogelijk namen om de volgorde te bepalen. Bij zeer veel objecten kun je deze in groepen verwerken of de [`Export / Import`](#Version_Updates) functie gebruiken.  
 <br>
 
-- Als de situatie onoverzichtelijk wordt, gebruik dan de uitlijningstools om alles weer te synchroniseren.  
+- Als de situatie onoverzichtelijk wordt, gebruik dan de uitlijningstools om alles weer te synchroniseren naar een beginpunt.  
 <br>
 
 - Omdat animatie-offset nu heel eenvoudig is, kun je je volledig concentreren op het maken van één **perfecte beweging**.  
@@ -314,7 +322,9 @@ De add-on biedt een tool om objecten in de lijst in één keer te converteren na
 
 ---
 
-#### 2. Offset uitleg
+#### 2. Stride uitleg
+<a id="Stride_Description"></a>
+
 - Lineaire stapelmodus :  
   - Eenvoudige modus :   
   <a href="images/img_4002.png"><img src="images/img_4002.png" width="650"></a>  
@@ -332,15 +342,16 @@ De add-on biedt een tool om objecten in de lijst in één keer te converteren na
 ---
 
 #### 3. Betekenis van de iconen in de lijst
+<a id="List_Icon_Meanings"></a>
 
 ![alt text](images/img_3003.gif)
 
-Icon A : Animatiebron (Modus)
-Icon B : Action staat voor algemene animatiegegevens (geen NLA)
+Icon A : Gegevensmodus
+Icon B : Action staat voor algemene animatie gegevens (geen NLA)
 Icon C : Beschikbare NLA-gegevens
 
-- De betekenis van de symbolen in B en C verandert afhankelijk van de geselecteerde bron in kolom A:
-  - ✔ : Bevat de **correcte** data zoals ingesteld in kolom A.
+- De betekenis van de symbolen in B en C verandert afhankelijk van de Gegevensmodus geselecteerd in kolom A:
+  - ✔ : Bevat de **correcte** data matching de modus in kolom A.
   - ・ : Bevat data, maar **niet** van het type ingesteld in kolom A.
   - ✕ : Bevat geen data.
 
@@ -358,6 +369,7 @@ Gegevens in het voorbeeld:
 
 
 ## 🔧 Technische referentie
+<a id="Technical_Reference"></a>
 
   [Blender NLA Officiële Handleiding](https://docs.blender.org/manual/en/latest/editors/nla/index.html)
 
@@ -368,9 +380,9 @@ Gegevens in het voorbeeld:
 
 ## 📘 Inhoudsopgave
 
-1. [Snel aan de slag](#-snel-aan-de-slag) 
-2. [Belangrijke updates](#-belangrijke-updates) 
-3. [Functieoverzicht](#-functieoverzicht)      
-4. [Veelgestelde vragen](#-veelgestelde-vragen) 
-5. [Overige](#-overige) 
-6. [Technische referentie](#-technische-referentie)
+1. [Snel aan de slag](#Quick_Start) 
+2. [Belangrijke updates](#Version_Updates) 
+3. [Functieoverzicht](#Feature_Overview)      
+4. [Veelgestelde vragen](#FAQ) 
+5. [Overige](#Others) 
+6. [Technische referentie](#Technical_Reference)
