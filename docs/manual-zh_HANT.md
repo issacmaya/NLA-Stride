@@ -11,16 +11,17 @@
 
 ## 📘 目錄
 
-1. [快速開始](#-快速開始)  
-2. [版更重點](#-版本更新重點)
-3. [功能總覽](#-功能總覽)      
-4. [常見問題](#-常見問題) 
-5. [其他](#-其他) 
-6. [技術參考](#-技術參考)
+1. [快速開始](#Quick_Start)  
+2. [版更重點](#Version_Updates)
+3. [功能總覽](#Feature_Overview)      
+4. [常見問題](#FAQ) 
+5. [其他](#Others) 
+6. [技術參考](#Technical_Reference)
 
 ---
 
 ## 🚀 快速開始
+<a id="Quick_Start"></a>
 
 ### 1. 外掛安裝
 
@@ -85,7 +86,9 @@
 此範例模型感謝台灣 [SANSUI / 山水品牌](https://www.sansuitw.com/?gad_source=1&gad_campaignid=23085773952&gbraid=0AAAAAoXC59ENhboAZDO-y0zK4yQpidtXM&gclid=CjwKCAiAybfLBhAjEiwAI0mBBscjnZOEYBBY127EypNMfnL1h_Vqm_HACczeJBOqMK-euDJFPb1iAxoC7rkQAvD_BwE)  贊助提供
 
 ---
-## 🌟 版本更新重點  
+## 🌟 版本更新重點
+<a id="Version_Updates"></a>
+  
 #### v1.0.0 更新重點
 - 清單的匯出 / 匯入 / 追加  
   ![alt text](images/v100_001.png)  
@@ -96,7 +99,9 @@
 #### v0.9.8 更新重點  
 - 對外發布初始版  
 ---
-## 🧰 功能總覽 
+## 🧰 功能總覽
+<a id="Feature_Overview"></a>
+ 
 
 #### 1. 資料來源 
 
@@ -119,7 +124,7 @@
   <br>
 
 - E : 清單功能 ( 下拉選單 )  
-  詳情見 [1-1 清單功能](#1-1-清單功能)
+  詳情見 [1-1 清單功能](#List_Functions)
   <br>
 
 - F : 清單中選取物件 上移 / 下移  
@@ -130,9 +135,10 @@
   只針對清單中的物件做轉換。
   <br>  
   
--  PS. [3.清單中內容說明](#3-清單中的圖示意義)
+-  PS. [3.清單中內容說明](#List_Icon_Meanings)
 
 #### 1-1. 清單功能
+<a id="List_Functions"></a>
 
 ![alt text](images/img_2002.png)
 
@@ -191,7 +197,7 @@
 #### 4. 簡易模式
 
 ![alt text](images/img_2005.png)  
-- P : 錯位模式 [( 詳細說明 )](#2-錯位說明)  
+- P : 錯位模式 [( 詳細說明 )](#Stride_Description)  
   錯位計算公式共有四種 : 1.線性 / 2.緩入 / 3.緩出 / 4.淡入淡出
   <br>
 
@@ -210,7 +216,7 @@
 ![alt text](images/img_2006.png)  
   **>> 本外掛最重要的核心，只要簡單設定，片段的錯位與縮放會自動調整 <<**
 
-- T : 錯位模式 [( 詳細說明 )](#2-錯位說明)  
+- T : 錯位模式 [( 詳細說明 )](#Stride_Description)  
   錯位計算公式共有四種 : 1.線性 / 2.緩入 / 3.緩出 / 4.淡入淡出
   <br>
 
@@ -222,7 +228,7 @@
   與 錯位模式 ( T )相乘出的錯位量，用於 自動化設定所有片段的起始點
   <br>
 
-- W : 錯位模式 [( 詳細說明 )](#2-錯位說明)    
+- W : 錯位模式 [( 詳細說明 )](#Stride_Description)    
   錯位計算公式共有四種 : 1.線性 / 2.緩入 / 3.緩出 / 4.淡入淡出
   <br>
 
@@ -241,6 +247,7 @@
 ---
 
 ## ❓ 常見問題
+<a id="FAQ"></a>
 
 
 #### 1. ⚠️ 注意「實例化資料（Instanced Data）」的細節
@@ -296,6 +303,7 @@
 
 
 ## 📖 其他說明
+<a id="Others"></a>
 
 
 #### 1. 對齊與錯位策略小技巧
@@ -303,7 +311,7 @@
 - 可以在 3D 檢視中 按 **Alt A** 取消所有選取後，再用 **選取清單物件** 功能，確認清單中到底選了那些物件。  
 <br>
 
-- 因為 **順序** 很重要，他直接影響錯位後的動畫狀態，如果可以請用名稱決定順序，倘若物件真的很多，也可以分批處理。  
+- 因為 **順序** 很重要，他直接影響錯位後的動畫狀態，如果可以請用名稱決定順序，倘若物件真的很多，可以用 [`匯出 / 匯入`](#Version_Updates) 的功能紀錄，或是分批處理。  
 <br>
 
 - 當狀況變的混亂，可以用對齊工具先統一回來  
@@ -318,6 +326,8 @@
 ---
 
 #### 2. 錯位說明
+<a id="Stride_Description"></a>
+
 - 線性疊加模式 :  
   - 簡易模式 :   
   <a href="images/img_4002.png"><img src="images/img_4002.png" width="650"></a>  
@@ -336,6 +346,7 @@
 ---
 
 #### 3. 清單中的圖示意義
+<a id="List_Icon_Meanings"></a>
 
 ![alt text](images/img_3003.gif)
 
@@ -362,6 +373,7 @@
 
 
 ## 🔧 技術參考
+<a id="Technical_Reference"></a>
 
   [Blender NLA 官方手冊](https://docs.blender.org/manual/en/latest/editors/nla/index.html)
 
@@ -372,12 +384,11 @@
 
 ## 📘 目錄
 
-1. [快速開始](#-快速開始) 
-2. [版更重點](#-版本更新重點) 
-3. [功能總覽](#-功能總覽)      
-4. [常見問題](#-常見問題) 
-5. [其他](#-其他) 
-6. [技術參考](#-技術參考)
+1. [快速開始](#Quick_Start) 
+2. [版更重點](#Version_Updates) 
+3. [功能總覽](#Feature_Overview)      
+4. [常見問題](#FAQ) 
+5. [其他](#Others) 
+6. [技術參考](#Technical_Reference)
 
 <!-- 手冊結束 -->
-
