@@ -17,8 +17,8 @@ Since Blender 4.0, a new Extensions framework has been introduced. The installat
 
 | File Name | Supported Blender Version | Description |
 | :--- | :--- | :--- |
-| **`NLA_stride_v1.0.0.zip`** | **3.0 ~ 5.x+** | Legacy add-on format with wide compatibility. |
-| **`nla_stride-1.0.0.zip`** | **4.0 and above** | New 4.0+ packaging specification (Recommended). |
+| **`NLA_stride_vX.X.X.zip`** | **3.0 ~ 5.x+** | Legacy add-on format with wide compatibility. |
+| **`nla_stride-X.X.X.zip`** | **4.0 and above** | New 4.0+ packaging specification (Recommended). |
 
 **Installation Steps:**
 1. Download the corresponding ZIP file.
